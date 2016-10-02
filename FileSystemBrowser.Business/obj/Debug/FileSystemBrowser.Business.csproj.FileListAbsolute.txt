@@ -1,0 +1,7 @@
+D:\Projects\FileSystemBrowser\FileSystemBrowser\FileSystemBrowser.Business\bin\Debug\FileSystemBrowser.Business.dll
+D:\Projects\FileSystemBrowser\FileSystemBrowser\FileSystemBrowser.Business\bin\Debug\FileSystemBrowser.Business.pdb
+D:\Projects\FileSystemBrowser\FileSystemBrowser\FileSystemBrowser.Business\bin\Debug\FileSystemBrowser.Data.dll
+D:\Projects\FileSystemBrowser\FileSystemBrowser\FileSystemBrowser.Business\bin\Debug\FileSystemBrowser.Data.pdb
+D:\Projects\FileSystemBrowser\FileSystemBrowser\FileSystemBrowser.Business\obj\Debug\FileSystemBrowser.Business.csprojResolveAssemblyReference.cache
+D:\Projects\FileSystemBrowser\FileSystemBrowser\FileSystemBrowser.Business\obj\Debug\FileSystemBrowser.Business.dll
+D:\Projects\FileSystemBrowser\FileSystemBrowser\FileSystemBrowser.Business\obj\Debug\FileSystemBrowser.Business.pdb
