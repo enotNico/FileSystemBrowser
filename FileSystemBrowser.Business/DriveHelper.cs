@@ -12,7 +12,7 @@ namespace FileSystemBrowser.Business
 {
     public class DriveHelper
     {
-        IRepository<DriveInfo> Drives = new DriveRepository();
+        DriveRepository Drives = new DriveRepository();
 
         public IEnumerable<DriveInfo> GetDrives()
         {

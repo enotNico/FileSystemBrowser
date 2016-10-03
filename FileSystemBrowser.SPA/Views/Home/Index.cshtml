@@ -1,0 +1,20 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<div ng-controller="FileSystemController">
+    <h2>Directories</h2>
+
+    <table>
+        <tr ng-repeat="directory in Directories">
+            <td>
+                {{directory.FullPath}}
+            </td>
+        </tr>
+    </table>
+
+</div>
+

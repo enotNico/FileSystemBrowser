@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileSystemBrowser.WebServic
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileSystemBrowser.Business", "FileSystemBrowser.Business\FileSystemBrowser.Business.csproj", "{C997A1E5-AB71-40D6-BC83-C2B7774270DB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileSystemBrowser.SPA", "FileSystemBrowser.SPA\FileSystemBrowser.SPA.csproj", "{D6E7DEAF-6384-49DA-8002-BF165D6453F1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{C997A1E5-AB71-40D6-BC83-C2B7774270DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C997A1E5-AB71-40D6-BC83-C2B7774270DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C997A1E5-AB71-40D6-BC83-C2B7774270DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6E7DEAF-6384-49DA-8002-BF165D6453F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6E7DEAF-6384-49DA-8002-BF165D6453F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6E7DEAF-6384-49DA-8002-BF165D6453F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6E7DEAF-6384-49DA-8002-BF165D6453F1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

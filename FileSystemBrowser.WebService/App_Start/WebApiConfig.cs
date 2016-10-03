@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web.Http;
+using System.Web.Http.Cors;
 
 namespace FileSystemBrowser.WebService
 {
@@ -14,6 +15,9 @@ namespace FileSystemBrowser.WebService
             // Web API routes
             config.MapHttpAttributeRoutes();
 
+            //CORS
+            config.EnableCors(new EnableCorsAttribute("*","*","*"));
+            
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",
                 routeTemplate: "api/{controller}/{id}",
@@ -22,6 +26,9 @@ namespace FileSystemBrowser.WebService
 
             // Only JSON
             config.Formatters.Remove(config.Formatters.XmlFormatter);
+
+            
+
         }
     }
 }

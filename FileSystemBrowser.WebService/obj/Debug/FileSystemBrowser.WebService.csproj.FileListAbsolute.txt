@@ -48,3 +48,6 @@ D:\Projects\FileSystemBrowser\FileSystemBrowser\FileSystemBrowser.WebService\bin
 D:\Projects\FileSystemBrowser\FileSystemBrowser\FileSystemBrowser.WebService\bin\FileSystemBrowser.Data.dll
 D:\Projects\FileSystemBrowser\FileSystemBrowser\FileSystemBrowser.WebService\bin\FileSystemBrowser.Business.pdb
 D:\Projects\FileSystemBrowser\FileSystemBrowser\FileSystemBrowser.WebService\bin\FileSystemBrowser.Data.pdb
+D:\Projects\FileSystemBrowser\FileSystemBrowser\FileSystemBrowser.WebService\bin\System.Web.Cors.dll
+D:\Projects\FileSystemBrowser\FileSystemBrowser\FileSystemBrowser.WebService\bin\System.Web.Http.Cors.dll
+D:\Projects\FileSystemBrowser\FileSystemBrowser\FileSystemBrowser.WebService\bin\System.Web.Http.Cors.xml

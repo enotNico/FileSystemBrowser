@@ -9,35 +9,24 @@ using FileSystemBrowser.Data.Interfaces;
 
 namespace FileSystemBrowser.Data.Repositories
 {
-    public class DirectoryRepository : IRepository<DirectoryInfo>
+    public class DirectoryRepository
     {
-        string currentPath = "";
+        private DirectoryInfo directory = null;
 
         public DirectoryRepository(string currentPath)
         {
-            this.currentPath = currentPath;
+            directory = new DirectoryInfo(currentPath);
         }
 
-        public IEnumerable<DirectoryInfo> Get(string path)
+        public IEnumerable<DirectoryInfo> GetDirectories()
         {
-            return new List<DirectoryInfo>();
-        }
-
-        public IEnumerable<DirectoryInfo> GetSubDirectories(string path)
-        {
-            DirectoryInfo directory = new DirectoryInfo(path);
             return directory.GetDirectories();
         }
 
-        public IEnumerable<FileInfo> GetFiles(string path)
+        public IEnumerable<FileInfo> GetFiles()
         {
-            DirectoryInfo directory = new DirectoryInfo(path);
             return directory.GetFiles();
         }
 
-        public IEnumerable<DirectoryInfo> GetAll()
-        {
-            throw new NotImplementedException();
-        }
     }
 }

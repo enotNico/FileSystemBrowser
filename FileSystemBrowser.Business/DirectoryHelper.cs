@@ -12,11 +12,21 @@ namespace FileSystemBrowser.Business
 {
     public class DirectoryHelper
     {
-        IRepository<DirectoryInfo> directories = null;
+        DirectoryRepository directories = null;
 
         public DirectoryHelper(string currentPath)
         {
             directories = new DirectoryRepository(currentPath);
+        }
+
+        public IEnumerable<DirectoryInfo> GetDirectories()
+        {
+            return directories.GetDirectories();
+        }
+
+        public IEnumerable<FileInfo> GetFiles()
+        {
+            return directories.GetFiles();
         }
     }
 }
