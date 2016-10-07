@@ -2,3 +2,4 @@ D:\Projects\FileSystemBrowser\FileSystemBrowser\FileSystemBrowser.Data\bin\Debug
 D:\Projects\FileSystemBrowser\FileSystemBrowser\FileSystemBrowser.Data\bin\Debug\FileSystemBrowser.Data.pdb
 D:\Projects\FileSystemBrowser\FileSystemBrowser\FileSystemBrowser.Data\obj\Debug\FileSystemBrowser.Data.dll
 D:\Projects\FileSystemBrowser\FileSystemBrowser\FileSystemBrowser.Data\obj\Debug\FileSystemBrowser.Data.pdb
+D:\Projects\FileSystemBrowser\FileSystemBrowser\FileSystemBrowser.Data\obj\Debug\FileSystemBrowser.Data.csprojResolveAssemblyReference.cache

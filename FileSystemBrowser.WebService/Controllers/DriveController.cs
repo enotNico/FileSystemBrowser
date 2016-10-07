@@ -19,6 +19,5 @@ namespace FileSystemBrowser.WebService.Controllers
         {
             return dHelper.GetDrives(); 
         }
-        
     }
 }

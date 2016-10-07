@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE html>
-<html>
-<head ng-app="FileSystemBrowserApp">
+<html ng-app="fsbApp">
+<head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - File System Browser</title>
@@ -21,6 +21,7 @@
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
                 </ul>
+                @*<div class="navbar-brand" style="margin-left: 200px" ng-controller="FileSizeController">Less 10MB: {{Sizes.less10}} | 10MB-50MB: {{Sizes.More10Less50}} | More 100Mb: {{Sizes.More100}} </div>*@
             </div>
         </div>
     </div>
@@ -37,6 +38,9 @@
     @Scripts.Render("~/bundles/bootstrap")
     <script src="~/Scripts/angular.js"></script>
     <script src="~/app/Scripts/app.js"></script>
-    <script src="~/app/Controllers/FileSystemController.js"></script>
+    <script src="~/app/Controllers/DriveController.js"></script>
+    <script src="~/app/Controllers/DirectoryController.js"></script>
+    <script src="~/app/Controllers/FileController.js"></script>
+    @*<script src="~/app/Controllers/FileSizeController.js"></script>*@
 </body>
 </html>

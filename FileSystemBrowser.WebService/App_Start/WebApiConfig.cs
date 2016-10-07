@@ -16,7 +16,7 @@ namespace FileSystemBrowser.WebService
             config.MapHttpAttributeRoutes();
 
             //CORS
-            config.EnableCors(new EnableCorsAttribute("*","*","*"));
+            config.EnableCors(new EnableCorsAttribute("*", "*", "*"));
             
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",

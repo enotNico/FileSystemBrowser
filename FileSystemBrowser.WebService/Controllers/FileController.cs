@@ -4,28 +4,28 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
-using System.IO;
 
 using FileSystemBrowser.Business;
+using System.IO;
 
 namespace FileSystemBrowser.WebService.Controllers
 {
-    public class DirectoryController : ApiController
+    public class FileController : ApiController
     {
-        DriveHelper driveHelper = new DriveHelper();
         DirectoryHelper directoryHepler = null;
+        DriveHelper driveHelper = new DriveHelper();
         
-        public IEnumerable<DirectoryInfo> Get()
-        {           
+        public IEnumerable<FileInfo> Get()
+        {
             directoryHepler = new DirectoryHelper(driveHelper.GetDrives().FirstOrDefault().Name);
-            return directoryHepler.GetDirectories();
+            return directoryHepler.GetFiles();
         }
 
         //GET: api/Directory/5
-        public IEnumerable<DirectoryInfo> Get([FromUri]string path)
+        public IEnumerable<FileInfo> Get([FromUri]string path)
         {
             directoryHepler = new DirectoryHelper(path);
-            return directoryHepler.GetDirectories();
+            return directoryHepler.GetFiles();
         }
     }
 }

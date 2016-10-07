@@ -1,20 +1,30 @@
 ﻿
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "File System Browser";
 }
 
-<h2>Index</h2>
+<div ng-controller="DirectoryController">
+    <h4>{{CurrentPath}}</h4>
 
-<div ng-controller="FileSystemController">
-    <h2>Directories</h2>
+    <div ng-controller="DriveController">
+        <select>
+           <option  ng-repeat="drive in Drives" ng-click="getDirectoryData(drive._name)">{{drive._name}}</option>
+        </select>
+    </div>
 
-    <table>
-        <tr ng-repeat="directory in Directories">
+
+    <table ng-controller="FileController">
+        <tr ng-repeat="dir in Dirs">
             <td>
-                {{directory.FullPath}}
+                <a href="#" ng-click="getDirectoryData(dir.FullPath); getFileData(dir.FullPath)">{{dir.OriginalPath}}</a>
             </td>
         </tr>
+
+        <tr ng-repeat="file in Files">
+            <td>
+                <a href="#">{{file.OriginalPath}}</a>
+            </td>
+        </tr>
+
     </table>
-
 </div>
-

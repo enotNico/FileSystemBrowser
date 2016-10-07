@@ -4,7 +4,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-using FileSystemBrowser.Data.Interfaces;
 using FileSystemBrowser.Data.Repositories;
 using System.IO;
 

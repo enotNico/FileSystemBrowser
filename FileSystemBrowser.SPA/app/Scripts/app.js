@@ -1,1 +1,1 @@
-﻿var FileSystemBrowserApp = angular.module("FileSystemBrowserApp", []);
+﻿var fsbApp = angular.module('fsbApp', []);
