@@ -1,0 +1,15 @@
+﻿<table ng-controller="FileController">
+    <tr ng-repeat="dir in Dirs">
+        <td>
+            <button ng-show="canBack" ng-click="goBack(dir.FullPath)">Go Back</button>
+            @*<a href="#" ng-show="canBack" ng-click="getDirectoryData(Parent); getFileData(Parent); getSizes(Parent); goBack(Parent)">..</a>*@
+            <a href="#" ng-click="getDirectoryData(dir.FullPath); getFileData(dir.FullPath); getSizes(dir.FullPath); goBack(dir.FullPath)">{{dir.OriginalPath}}</a>
+        </td>
+    </tr>
+
+    <tr ng-repeat="file in Files">
+        <td>
+            <a href="#">{{file.OriginalPath}}</a>
+        </td>
+    </tr>
+</table>

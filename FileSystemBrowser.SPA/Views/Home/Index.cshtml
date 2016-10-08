@@ -4,27 +4,40 @@
 }
 
 <div ng-controller="DirectoryController">
-    <h4>{{CurrentPath}}</h4>
 
-    <div ng-controller="DriveController">
-        <select>
-           <option  ng-repeat="drive in Drives" ng-click="getDirectoryData(drive._name)">{{drive._name}}</option>
-        </select>
+    <h4>Current path: {{CurrentPath}}</h4>
+    
+    <div class="col-md-4" style="margin-top: 5px;" ng-controller="DriveController">
+        <ul ng-repeat="drive in Drives">
+            <li><a href="#" ng-click="getDirectoryData(drive._name)">{{drive._name}}</a></li>
+        </ul>
     </div>
 
+    <div class="col-md-4" ng-controller="FileController">
+        <div ng-controller="SizeController">
+            <span>Less 10Mb: {{LessThan10}} | 10Mb-50Mb: {{More10Less50}} | More 100Mb: {{MoreThan100}}</span>
 
-    <table ng-controller="FileController">
-        <tr ng-repeat="dir in Dirs">
-            <td>
-                <a href="#" ng-click="getDirectoryData(dir.FullPath); getFileData(dir.FullPath)">{{dir.OriginalPath}}</a>
-            </td>
-        </tr>
+            <br />
+            <a href="#" ng-show="canBack" ng-click="getDirectoryData(goBack(CurrentPath))">..</a>
 
-        <tr ng-repeat="file in Files">
-            <td>
-                <a href="#">{{file.OriginalPath}}</a>
-            </td>
-        </tr>
+            <table>
+                <tr ng-repeat="dir in Dirs">
+                    <td>
+                        <a href="#" ng-click="getDirectoryData(dir.FullPath); getFileData(dir.FullPath); getSizeData(dir.FullPath)">{{dir.OriginalPath}}</a>
+                    </td>
+                </tr>
 
-    </table>
+                <tr ng-repeat="file in Files">
+                    <td>
+                        <a href="#">{{file.OriginalPath}}</a>
+                    </td>
+               </tr>
+            </table>
+        </div>
+    </div>
+        
+
+    <div class="col-md-4">
+        
+    </div>
 </div>

@@ -20,12 +20,26 @@ namespace FileSystemBrowser.Data.Repositories
 
         public IEnumerable<DirectoryInfo> GetDirectories()
         {
-            return directory.GetDirectories();
+            IEnumerable<DirectoryInfo> currentDirectories = null;
+            try
+            {
+                currentDirectories = directory.GetDirectories();
+            }
+            catch (Exception) { }
+
+            return currentDirectories;
         }
 
         public IEnumerable<FileInfo> GetFiles()
         {
-            return directory.GetFiles();
+            IEnumerable<FileInfo> currentFiles = null;
+
+            try
+            {
+               currentFiles = directory.GetFiles();
+            } catch(Exception) { }
+
+            return currentFiles;
         }
 
     }

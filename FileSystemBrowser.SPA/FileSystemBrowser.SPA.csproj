@@ -132,6 +132,7 @@
     <Content Include="app\Controllers\DirectoryController.js" />
     <Content Include="app\Controllers\FileSizeController.js" />
     <Content Include="app\Scripts\app.js" />
+    <Content Include="app\Views\Index.html" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Site.css" />
@@ -932,6 +933,7 @@
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Views\Home\DirectoryList.html" />
     <Content Include="Web.config" />
     <Content Include="Scripts\version.json" />
     <Content Include="Views\Home\Index.cshtml" />
@@ -947,7 +949,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="app\Views\" />
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
   </ItemGroup>
